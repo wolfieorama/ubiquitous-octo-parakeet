@@ -1,4 +1,4 @@
-<%= form_for(@paper) do |f| %>
+<%= bootstrap_form_for(@paper) do |f| %>
   <% if @paper.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@paper.errors.count, "error") %> prohibited this paper from being saved:</h2>
@@ -12,20 +12,19 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :name %><br>
     <%= f.text_field :name %>
   </div>
   <div class="field">
-    <%= f.label :date %><br>
     <%= f.text_field :date %>
   </div>
   <div class="field">
-    <%= f.label :time %><br>
     <%= f.text_field :time %>
   </div>
   <div class="field">
-    <%= f.label :students %><br>
     <%= f.number_field :students %>
+  </div>
+  <div class="field">
+    <%= f.url_field :image %>
   </div>
   <div class="actions">
     <%= f.submit %>
