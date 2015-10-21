@@ -27,6 +27,8 @@ gem 'puma', '~> 2.14'
 
 gem 'bootstrap_form', '~> 2.3'
 
+gem 'bootstrap-sass', '~> 3.3', '>= 3.3.5.1'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
